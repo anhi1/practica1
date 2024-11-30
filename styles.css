@@ -1,0 +1,50 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF;
+    margin: 50px auto;
+    transition: transform 0.5s ease; /* Animación suave */
+    transform-origin: top left; /* Punto de origen en la esquina superior izquierda */
+  }
+  
+  /* Estado hover: Rotación */
+  .box:hover {
+    transform: rotate(45deg); /* Gira 45 grados */
+  }
+
+  .fondo{
+    background-color: silver;
+  }
+
+  .cuat{
+    width: 120px;
+    height: 120px;
+    background-color: blueviolet;
+    /* transform: translateX(100px) rotate(45deg) skew(0.5rad); */
+    /* transform: translateY(70px); */
+    /* transform: scaleX(1.5);
+    transform: scaleY(1.5) */
+    /* transform: scale(2, 2); */
+    /* transform: skew(10deg) */
+    /* transform: skew(0.5rad) */
+    /* transform: translateX(3rem) skewX(-10deg) */
+
+
+
+    /* TRANSITION NO SE APLICA EN LOS ESTADOS 
+    transition: <property> <duration> <timing-function> <delay>; */
+    /* Para que transition necesita de un disparador es decir un trigger: hover, target, focus, active */
+    transition: background-color 2s, width 2s, height 2s;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;/*  (ritmo) */
+    transition-delay: 1s;
+    /* transition: color 0.3s, transform 0.5s ease-in-out, opacity 0.4s 0.2s; */
+  }
+
+  .cuat:hover{
+    background-color: rgb(86, 74, 66);
+    width:200px;
+    height:200px
+
+  }
